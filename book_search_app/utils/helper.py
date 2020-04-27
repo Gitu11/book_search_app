@@ -26,7 +26,7 @@ def filter_stopwords(wordlist: list) -> list:
     :param wordlist:
     :return:  filtered list of words
     """
-    return list(filter(lambda x: x not in STOP_WORDS, wordlist))
+    return list(filter(lambda x: x.lower() not in STOP_WORDS, wordlist))
 
 
 def find_indexes(wordlist: list, word) -> list:

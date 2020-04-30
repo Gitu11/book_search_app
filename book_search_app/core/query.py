@@ -20,7 +20,7 @@ def search_query(query, indexed_map):
         if word in indexed_map:
             for item in indexed_map[word]:
                 word_search_map[item[0]].append(item[1])
-    print(word_search_map)
+    #print(word_search_map)
     ranked_docs = relevance_ranking(word_search_map)
     return ranked_docs
 

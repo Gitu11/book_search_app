@@ -12,7 +12,7 @@ if __name__ == '__main__':
         query = input("Provide the query to search: ")
         k = int(input("How many max results you want: "))
         doc_ids = search_query(query, indexed_map)
-        print(doc_ids)
+        #print(doc_ids)
         for item in doc_ids[:k]:
             summary_map[item]['summary'] = sanitize_data(summary_map[item]['summary'])
             print(summary_map[item]['summary'])

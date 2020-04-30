@@ -45,4 +45,6 @@ def sanitize_data(sentence):
     sentence = sentence.replace("\u00a0", " ")
     sentence = sentence.replace("The Book in Three Sentences: ", "")
     sentence = sentence.replace("\u201c", '"').replace("\u201d", '"')
+    sentence = sentence.replace("\u2019", "'")
+    sentence = sentence.replace(".", "")
     return sentence
